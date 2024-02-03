@@ -14,6 +14,8 @@ export class MarginGenerator extends Generator {
     ["8", ["40px"]],
     ["9", ["48px"]],
     ["10", ["64px"]],
+    ["11", ["80px"]],
+    ["12", ["90px"]],
     ["-1", ["-2px"]],
     ["-2", ["-4px"]],
     ["-3", ["-8px"]],
@@ -24,6 +26,8 @@ export class MarginGenerator extends Generator {
     ["-8", ["-40px"]],
     ["-9", ["-48px"]],
     ["-10", ["-64px"]],
+    ["-11", ["-80px"]],
+    ["-12", ["-90px"]],
   ]);
   list = ["auto", "inherit"];
   cssData = [
