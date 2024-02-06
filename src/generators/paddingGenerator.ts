@@ -15,7 +15,7 @@ export class PaddingGenerator extends Generator {
     ["9", ["48px"]],
     ["10", ["64px"]],
     ["11", ["80px"]],
-    ["12", ["90px"]],
+    ["12", ["96px"]],
   ]);
   list = ["inherit"];
   cssData = [

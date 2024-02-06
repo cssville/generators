@@ -42,6 +42,11 @@ import { BorderColorGenerator } from "./generators/borderColorGenerator";
 import { BorderStyleGenerator } from "./generators/borderStyleGenerator";
 import { BorderWidthGenerator } from "./generators/borderWidthGenerator";
 import { TextWrapGenerator } from "./generators/textWrapGenerator";
+import { GapGenerator } from "./generators/gapGenerator";
+import { TopGenerator } from "./generators/topGenerator";
+import { RightGenerator } from "./generators/rightGenerator";
+import { LeftGenerator } from "./generators/leftGenerator";
+import { BottomGenerator } from "./generators/bottomGenerator";
 
 export class Cssville {
 
@@ -55,6 +60,7 @@ export class Cssville {
       new BorderWidthGenerator("border-width", false),
       new BorderRadiusGenerator("border-radius"),
       new BoxShadowGenerator("box-shadow"),
+      new BottomGenerator("bottom"),
       new BackgroundColorGenerator("background-color", false),
       new ColorGenerator("color", false),
       new CursorGenerator("cursor"),
@@ -67,8 +73,10 @@ export class Cssville {
       new FontFamilyGenerator("font-family"),
       new FontSizeGenerator("font-size"),
       new FontWeightGenerator("font-weight"),
+      new GapGenerator("gap"),
       new HeightGenerator("height"),
       new JustifyContentGenerator("justify-content"),
+      new LeftGenerator("left"),
       new LineHeightGenerator("line-height"),
       new MarginGenerator("margin"),
       new ObjectFitGenerator("object-fit"),
@@ -76,9 +84,11 @@ export class Cssville {
       new OverflowGenerator("overflow"),
       new PaddingGenerator("padding"),
       new PositionGenerator("position"),
+      new RightGenerator("right"),
       new TextAlignGenerator("text-align"),
       new TextDecorationGenerator("text-decoration"),
       new TextWrapGenerator("text-wrap"),
+      new TopGenerator("top"),
       new WidthGenerator("width"),
       new WhiteSpaceGenerator("white-space"),
       new WordBreakGenerator("word-break"),
