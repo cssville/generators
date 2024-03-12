@@ -47,6 +47,7 @@ import { TopGenerator } from "./generators/topGenerator";
 import { RightGenerator } from "./generators/rightGenerator";
 import { LeftGenerator } from "./generators/leftGenerator";
 import { BottomGenerator } from "./generators/bottomGenerator";
+import { BoxSizingGenerator } from "./generators/boxSizing";
 
 export class Cssville {
 
@@ -60,6 +61,7 @@ export class Cssville {
       new BorderWidthGenerator("border-width", false),
       new BorderRadiusGenerator("border-radius"),
       new BoxShadowGenerator("box-shadow"),
+      new BoxSizingGenerator("box-sizing"),
       new BottomGenerator("bottom"),
       new BackgroundColorGenerator("background-color", false),
       new ColorGenerator("color", false),
