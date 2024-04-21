@@ -13,15 +13,12 @@ export class CssClassData {
     this.postfixValuesMap.forEach((value: string[], key: string) => {
       var postfix = key;
       var innerProperties = "";
-      var innerPropertiesIm = "";
       this.cssProperties.forEach(cssProperty => {
         value.forEach(v => {
           innerProperties += `${cssProperty}: ${v}; `;
-          innerPropertiesIm += `${cssProperty}: ${v} !important; `;
         });
       });
       this.cssParts.set(`${this.className}-${postfix}`, innerProperties);
-      this.cssParts.set(`${this.className}-${postfix}-i`, innerPropertiesIm);
     });
   }
 
@@ -33,17 +30,17 @@ export class CssClassData {
 
   getCss(prefix: string = "", classes: string[]): string {
     var css = "";
-    var postfix = "hover";
+    var hoverPostfix = "hover";
     this.cssParts.forEach((value: string, key: string) => {
       var className = `${prefix === "" ? "" : `${prefix}-`}${key}`;
-      var classNameWithPostfix = `${prefix === "" ? "" : `${prefix}-`}${key}-${postfix}`;
+      var classNameWithHoverPostfix = `${prefix === "" ? "" : `${prefix}-`}${key}-${hoverPostfix}`;
       if (classes.length === 0) {
         css += `.${className} {${value}} `;
-        css += `.${classNameWithPostfix}:hover {${value}} `;
+        css += `.${classNameWithHoverPostfix}:hover {${value}} `;
       }
       if (classes.length > 0 && classes.indexOf(className) >= 0) {
         css += `.${className} {${value}} `;
-        css += `.${classNameWithPostfix}:hover {${value}} `;
+        css += `.${classNameWithHoverPostfix}:hover {${value}} `;
       }
     });
     return css;
