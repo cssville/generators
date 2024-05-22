@@ -1,9 +1,9 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class TextWrapGenerator extends Generator {
-    list = ["wrap", "nowrap", "balance", "inherit", "initial", "revert", "unset"];
-    cssData = [
-        new CssClassData("text-wrap", ["text-wrap"], this.list, this.cssClassToValuesMap)
-    ];
+  cssData = [
+    new CssClassData("tex-wra", ["text-wrap"],
+      ["wrap", "nowrap", "balance", "inherit", "initial", "revert", "unset"])
+  ]
 }

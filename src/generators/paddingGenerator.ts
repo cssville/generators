@@ -1,5 +1,5 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class PaddingGenerator extends Generator {
   cssClassToValuesMap = new Map([
@@ -16,15 +16,15 @@ export class PaddingGenerator extends Generator {
     ["10", ["64px"]],
     ["11", ["80px"]],
     ["12", ["96px"]],
-  ]);
-  list = ["inherit"];
+  ])
+  list = ["inherit"]
   cssData = [
-    new CssClassData("p", ["padding"], this.list, this.cssClassToValuesMap),
-    new CssClassData("pt", ["padding-top"], this.list, this.cssClassToValuesMap),
-    new CssClassData("pb", ["padding-bottom"], this.list, this.cssClassToValuesMap),
-    new CssClassData("pl", ["padding-left"], this.list, this.cssClassToValuesMap),
-    new CssClassData("pr", ["padding-right"], this.list, this.cssClassToValuesMap),
-    new CssClassData("px", ["padding-left", "padding-right"], this.list, this.cssClassToValuesMap),
-    new CssClassData("py", ["padding-top", "padding-bottom"], this.list, this.cssClassToValuesMap),
-  ];
+    new CssClassData("pad", ["padding"], this.list, this.cssClassToValuesMap),
+    new CssClassData("pad-top", ["padding-top"], this.list, this.cssClassToValuesMap),
+    new CssClassData("pad-bot", ["padding-bottom"], this.list, this.cssClassToValuesMap),
+    new CssClassData("pad-lef", ["padding-left"], this.list, this.cssClassToValuesMap),
+    new CssClassData("pad-rig", ["padding-right"], this.list, this.cssClassToValuesMap),
+    new CssClassData("pad-x", ["padding-left", "padding-right"], this.list, this.cssClassToValuesMap),
+    new CssClassData("pad-y", ["padding-top", "padding-bottom"], this.list, this.cssClassToValuesMap),
+  ]
 }

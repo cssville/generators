@@ -1,5 +1,5 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class MarginGenerator extends Generator {
   cssClassToValuesMap = new Map([
@@ -28,15 +28,15 @@ export class MarginGenerator extends Generator {
     ["-10", ["-64px"]],
     ["-11", ["-80px"]],
     ["-12", ["-96px"]],
-  ]);
-  list = ["auto", "inherit"];
+  ])
+  list = ["auto", "inherit"]
   cssData = [
-    new CssClassData("m", ["margin"], this.list, this.cssClassToValuesMap),
-    new CssClassData("mt", ["margin-top"], this.list, this.cssClassToValuesMap),
-    new CssClassData("mb", ["margin-bottom"], this.list, this.cssClassToValuesMap),
-    new CssClassData("ml", ["margin-left"], this.list, this.cssClassToValuesMap),
-    new CssClassData("mr", ["margin-right"], this.list, this.cssClassToValuesMap),
-    new CssClassData("mx", ["margin-left", "margin-right"], this.list, this.cssClassToValuesMap),
-    new CssClassData("my", ["margin-top", "margin-bottom"], this.list, this.cssClassToValuesMap),
-  ];
+    new CssClassData("mar", ["margin"], this.list, this.cssClassToValuesMap),
+    new CssClassData("mar-top", ["margin-top"], this.list, this.cssClassToValuesMap),
+    new CssClassData("mar-bot", ["margin-bottom"], this.list, this.cssClassToValuesMap),
+    new CssClassData("mar-lef", ["margin-left"], this.list, this.cssClassToValuesMap),
+    new CssClassData("mar-rig", ["margin-right"], this.list, this.cssClassToValuesMap),
+    new CssClassData("mar-x", ["margin-left", "margin-right"], this.list, this.cssClassToValuesMap),
+    new CssClassData("mar-y", ["margin-top", "margin-bottom"], this.list, this.cssClassToValuesMap),
+  ]
 }

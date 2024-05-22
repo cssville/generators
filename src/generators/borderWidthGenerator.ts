@@ -1,13 +1,13 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class BorderWidthGenerator extends Generator {
-    list = ["0px", "1px", "2px", "3px", "thin", "medium", "thick"];
-    cssData = [
-        new CssClassData("border-width", ["border-width"], this.list),
-        new CssClassData("border-bottom-width", ["border-bottom-width"], this.list),
-        new CssClassData("border-left-width", ["border-left-width"], this.list),
-        new CssClassData("border-right-width", ["border-right-width"], this.list),
-        new CssClassData("border-top-width", ["border-top-width"], this.list),
-    ];
+  list = ["0px", "1px", "2px", "3px", "thin", "medium", "thick"]
+  cssData = [
+    new CssClassData("bor-wid", ["border-width"], this.list),
+    new CssClassData("bor-bot-wid", ["border-bottom-width"], this.list),
+    new CssClassData("bor-lef-wid", ["border-left-width"], this.list),
+    new CssClassData("bor-rig-wid", ["border-right-width"], this.list),
+    new CssClassData("bor-top-wid", ["border-top-width"], this.list),
+  ]
 }

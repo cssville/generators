@@ -1,9 +1,9 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class PositionGenerator extends Generator {
-    list = ["static", "relative", "absolute", "fixed", "sticky", "inherit", "initial", "revert", "unset"];
-    cssData = [
-        new CssClassData("position", ["position"], this.list),
-    ];
+  cssData = [
+    new CssClassData("pos", ["position"],
+      ["static", "relative", "absolute", "fixed", "sticky", "inherit", "initial", "revert", "unset"]),
+  ]
 }

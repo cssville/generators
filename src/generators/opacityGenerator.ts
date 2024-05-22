@@ -1,8 +1,11 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class OpacityGenerator extends Generator {
-    cssClassToValuesMap = new Map([
+  cssData = [
+    new CssClassData("opacity", ["opacity"],
+      ["inherit", "initial", "revert", "revert-layer", "unset"],
+      new Map([
         ["0", ["0"]],
         ["01", ["0.1"]],
         ["02", ["0.2"]],
@@ -14,9 +17,7 @@ export class OpacityGenerator extends Generator {
         ["08", ["0.8"]],
         ["09", ["0.9"]],
         ["1", ["1"]],
-    ]);
-    list = ["inherit", "initial", "revert", "revert-layer", "unset"];
-    cssData = [
-        new CssClassData("opacity", ["opacity"], this.list, this.cssClassToValuesMap),
-    ];
+      ])
+    ),
+  ]
 }

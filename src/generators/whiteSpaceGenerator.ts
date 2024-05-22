@@ -1,9 +1,9 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class WhiteSpaceGenerator extends Generator {
-    list = ["nowrap", "pre", "pre-wrap", "pre-line", "break-spaces", "normal"];
-    cssData = [
-        new CssClassData("white-space", ["white-space"], this.list)
-    ];
+  cssData = [
+    new CssClassData("whi-spa", ["white-space"],
+      ["nowrap", "pre", "pre-wrap", "pre-line", "break-spaces", "normal"])
+  ]
 }

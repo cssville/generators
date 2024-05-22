@@ -1,8 +1,11 @@
-import { CssClassData } from "../data/cssClassData";
-import { Generator } from "../Generator";
+import { CssClassData } from "../data/cssClassData"
+import { Generator } from "../Generator"
 
 export class LineHeightGenerator extends Generator {
-    cssClassToValuesMap = new Map([
+  cssData = [
+    new CssClassData("lin-hei", ["line-height"],
+      [],
+      new Map([
         ["2xs", ["14px"]],
         ["xs", ["16px"]],
         ["sm", ["20px"]],
@@ -17,8 +20,7 @@ export class LineHeightGenerator extends Generator {
         ["7xl", ["64px"]],
         ["8xl", ["76px"]],
         ["9xl", ["88px"]],
-    ]);
-    cssData = [
-        new CssClassData("lh", ["line-height"], [], this.cssClassToValuesMap)
-    ];
+      ])
+    )
+  ]
 }
