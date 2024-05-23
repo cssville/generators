@@ -3,7 +3,7 @@ import { Generator } from "../Generator"
 
 export class OpacityGenerator extends Generator {
   cssData = [
-    new CssClassData("opacity", ["opacity"],
+    new CssClassData("opa", ["opacity"],
       ["inherit", "initial", "revert", "revert-layer", "unset"],
       new Map([
         ["0", ["0"]],
