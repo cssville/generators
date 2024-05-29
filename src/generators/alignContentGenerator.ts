@@ -3,8 +3,7 @@ import { Generator } from "../Generator"
 
 export class AlignContentGenerator extends Generator {
   cssData = [
-    new CssClassData("ali-con",
-      ["-ms-align-items", "-o-align-items", "-webkit-align-items", "align-items"],
+    new CssClassData("ali-con", ["align-content"],
       ["center", "start", "end", "flex-start", "flex-end", "normal",
         "baseline", "space-between", "space-around", "space-evenly", "stretch", "inherit", "initial",
         "revert", "revert-layer", "unset"],
