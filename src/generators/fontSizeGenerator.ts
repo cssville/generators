@@ -19,7 +19,6 @@ export class FontSizeGenerator extends Generator {
         ["4xl", ["32px"]],
         ["5xl", ["36px"]],
         ["6xl", ["45px"]],
-        ["xxx-large", ["48px", "xxx-large"]],
         ["7xl", ["57px"]],
         ["8xl", ["69px"]],
         ["9xl", ["80px"]],

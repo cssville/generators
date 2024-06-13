@@ -6,6 +6,7 @@ export class LineHeightGenerator extends Generator {
     new CssClassData("lin-hei", ["line-height"],
       [],
       new Map([
+        ["3xs", ["12px"]],
         ["2xs", ["14px"]],
         ["xs", ["16px"]],
         ["sm", ["20px"]],

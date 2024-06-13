@@ -6,7 +6,7 @@ export class Var implements IVar {
     this.name = name;
     
     this.value = value;
-    this.varName = `--cssville-${this.name}-${this.category}`;
+    this.varName = `--cssville-${this.category}-${this.name}`;
     this.var = `var(${this.varName})`;
     this.css = `${this.varName}: ${this.value};`;
     this.postfixValue = [this.name, [this.var]]

@@ -32,7 +32,6 @@ import CssvilleBreakpoints from "./vars/breakpoints";
 import CssvilleColors from "./vars/colors";
 import ThemeColors from "./vars/themeColors";
 import { IVar } from "./IVar";
-import CssvilleBorder from "./vars/border";
 import { BoxShadowGenerator } from "./generators/boxShadowGenerator";
 import CssvilleShadow from "./vars/shadow";
 import CssvilleFontFamily from "./vars/fontFamily";
@@ -48,6 +47,7 @@ import { RightGenerator } from "./generators/rightGenerator";
 import { LeftGenerator } from "./generators/leftGenerator";
 import { BottomGenerator } from "./generators/bottomGenerator";
 import { BoxSizingGenerator } from "./generators/boxSizing";
+import { BorderCollapseGenerator } from "./generators/borderCollapseGenerator";
 
 export class Cssville {
 
@@ -56,6 +56,7 @@ export class Cssville {
       new AlignContentGenerator("align-content"),
       new AlignItemsGenerator("align-items"),
       new BorderGenerator("border", false),
+      new BorderCollapseGenerator("border-collapse", false),
       new BorderColorGenerator("border-color", false),
       new BorderStyleGenerator("border-style", false),
       new BorderWidthGenerator("border-width", false),
@@ -104,7 +105,6 @@ export class Cssville {
       this.breakpoints,
       CssvilleFontFamily.vars,
       CssvilleColors.colorsPalette,
-      CssvilleBorder.vars,
       CssvilleShadow.vars,
     ];
 

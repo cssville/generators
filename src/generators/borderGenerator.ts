@@ -1,11 +1,12 @@
 import { CssClassData } from "../data/cssClassData"
 import { Generator } from "../Generator"
-import CssvilleBorder from "../vars/border"
 import ThemeColors from "../vars/themeColors"
 
 export class BorderGenerator extends Generator {
   cssClassToValuesMap = new Map([
-    ["1", [`${CssvilleBorder.width.var} solid ${ThemeColors.border.var}`]],
+    ["1", [`1px solid ${ThemeColors.border.var}`]],
+    ["2", [`2px solid ${ThemeColors.border.var}`]],
+    ["3", [`3px solid ${ThemeColors.border.var}`]],
   ])
   list = ["none"]
   cssData = [

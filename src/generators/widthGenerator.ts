@@ -17,6 +17,7 @@ export class WidthGenerator extends Generator {
     ["10", ["83.333%"]],
     ["11", ["91.666%"]],
     ["12", ["100%"]],
+    ["full", ["100%"]],
     ["xs", [CssvilleBreakpoints.xs.var]],
     ["sm", [CssvilleBreakpoints.sm.var]],
     ["md", [CssvilleBreakpoints.md.var]],
