@@ -4,6 +4,7 @@ import { Generator } from "../Generator"
 export class HeightGenerator extends Generator {
   cssClassToValuesMap = new Map([
     ["100", ["100%"]],
+    ["full", ["100%"]],
     ["0", ["0px"]],
     ["1", ["2px"]],
     ["2", ["4px"]],
