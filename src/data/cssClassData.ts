@@ -18,7 +18,7 @@ export class CssClassData {
           innerProperties += `${cssProperty}: ${v}; `;
         });
       });
-      this.cssParts.set(`${this.className}-${postfix}`, innerProperties);
+      this.cssParts.set(`${this.className}-${postfix}`.replace(/\//g, "\\/"), innerProperties);
     });
   }
 
