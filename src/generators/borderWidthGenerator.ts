@@ -6,12 +6,8 @@ export class BorderWidthGenerator extends Generator {
     ["0", ["0px"]],
     ["1", ["1px"]],
     ["2", ["2px"]],
-    ["3", ["3px"]],
-    ["4", ["4px"]],
-    ["5", ["5px"]],
-    ["6", ["6px"]],
-    ["7", ["7px"]],
-    ["8", ["8px"]],
+    ["3", ["4px"]],
+    ["4", ["8px"]],
   ])
   list = ["thin", "medium", "thick"]
   cssData = [
