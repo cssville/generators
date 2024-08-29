@@ -22,10 +22,10 @@ export class BorderRadiusGenerator extends Generator {
   ])
   list = ["inherit", "9999px"]
   cssData = [
-    new CssClassData("bor-rad", ["-ms-border-radius", "border-radius"], this.list, this.cssClassToValuesMap),
-    new CssClassData("bor-rad-top-lef", ["-ms-border-top-left-radius", "border-top-left-radius"], this.list, this.cssClassToValuesMap),
-    new CssClassData("bor-rad-top-rig", ["-ms-border-top-right-radius", "border-top-right-radius"], this.list, this.cssClassToValuesMap),
-    new CssClassData("bor-rad-bot-rig", ["-ms-border-bottom-right-radius", "border-bottom-right-radius"], this.list, this.cssClassToValuesMap),
-    new CssClassData("bor-rad-bot-lef", ["-ms-border-bottom-left-radius", "border-bottom-left-radius"], this.list, this.cssClassToValuesMap)
+    new CssClassData("bor-rad", ["border-radius"], this.list, this.cssClassToValuesMap),
+    new CssClassData("bor-rad-top-lef", ["border-top-left-radius"], this.list, this.cssClassToValuesMap),
+    new CssClassData("bor-rad-top-rig", ["border-top-right-radius"], this.list, this.cssClassToValuesMap),
+    new CssClassData("bor-rad-bot-rig", ["border-bottom-right-radius"], this.list, this.cssClassToValuesMap),
+    new CssClassData("bor-rad-bot-lef", ["border-bottom-left-radius"], this.list, this.cssClassToValuesMap)
   ]
 }

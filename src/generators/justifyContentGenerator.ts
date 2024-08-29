@@ -3,7 +3,7 @@ import { Generator } from "../Generator"
 
 export class JustifyContentGenerator extends Generator {
   cssData = [
-    new CssClassData("jus-con", ["-o-justify-content", "-webkit-justify-content", "justify-content"],
+    new CssClassData("jus-con", ["justify-content"],
       ["center", "start", "flex-start", "end", "flex-end", "normal", "space-between", "space-around", "space-evenly",
         "stretch", "inherit", "initial", "revert", "unset"],
       new Map([

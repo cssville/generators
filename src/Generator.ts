@@ -13,7 +13,7 @@ export class Generator implements IGenerator {
   public cssData: CssClassData[] = [];
 
   generate(prefix: string = "", classes: string[] = []): string {
-    var cssPart = "";
+    let cssPart = "";
     this.cssData.forEach(data => {
       cssPart += data.getCss(prefix, classes);
     });

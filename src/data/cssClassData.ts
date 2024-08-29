@@ -11,8 +11,8 @@ export class CssClassData {
       });
     }
     this.postfixValuesMap.forEach((value: string[], key: string) => {
-      var postfix = key;
-      var innerProperties = "";
+      let postfix = key;
+      let innerProperties = "";
       this.cssProperties.forEach(cssProperty => {
         value.forEach(v => {
           innerProperties += `${cssProperty}: ${v}; `;
@@ -29,11 +29,11 @@ export class CssClassData {
   private cssParts: Map<string, string>;
 
   getCss(prefix: string = "", classes: string[]): string {
-    var css = "";
-    var hoverPostfix = "hover";
+    let css = "";
+    const hoverPostfix = "hover";
     this.cssParts.forEach((value: string, key: string) => {
-      var className = `${prefix === "" ? "" : `${prefix}-`}${key}`;
-      var classNameWithHoverPostfix = `${prefix === "" ? "" : `${prefix}-`}${key}-${hoverPostfix}`;
+      const className = `${prefix === "" ? "" : `${prefix}-`}${key}`;
+      const classNameWithHoverPostfix = `${prefix === "" ? "" : `${prefix}-`}${key}-${hoverPostfix}`;
       if (classes.length === 0) {
         css += `.${className} {${value}} `;
         css += `.${classNameWithHoverPostfix}:hover {${value}} `;

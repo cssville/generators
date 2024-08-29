@@ -1,6 +1,6 @@
 
 export default function hexToRgba(hex: string, alpha: number = 1.0): string {
-  var commaSeparatedRGB = hexToRgbCommaSeparated(hex);
+  let commaSeparatedRGB = hexToRgbCommaSeparated(hex);
   if (alpha > 0 && alpha < 1) {
     return `rgba(${commaSeparatedRGB}, ${alpha})`;
   }

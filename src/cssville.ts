@@ -114,11 +114,11 @@ export class Cssville {
   ]);
 
   static getCss(classes: string[] = []): string {
-    var css = "";
-    var allVarsCss = "";
-    for (var varsCollection of this.variables) {
-      var collectionCss = "";
-      for (var v of varsCollection) {
+    let css = "";
+    let allVarsCss = "";
+    for (let varsCollection of this.variables) {
+      let collectionCss = "";
+      for (let v of varsCollection) {
         collectionCss += ` ${v.css}`;
       }
       allVarsCss += ` ${collectionCss}`;
@@ -127,17 +127,17 @@ export class Cssville {
       allVarsCss += ` ${key}: ${value.var};`;
     }
     css += `:root {${allVarsCss}} `;
-    for (var x = 0; x < this.generators.length; x++) {
-      const g = this.generators[x];
-      var cssPart = g.generate("", classes);
+    for (let i = 0; i < this.generators.length; i++) {
+      const g = this.generators[i];
+      const cssPart = g.generate("", classes);
       css += cssPart;
     }
     for (const breakpoint of this.breakpoints) {
-      var innerCss = "";
-      for (var x = 0; x < this.generators.length; x++) {
-        const generator = this.generators[x];
+      let innerCss = "";
+      for (let j = 0; j < this.generators.length; j++) {
+        const generator = this.generators[j];
         if (generator.generateCssForBreakpoints) {
-          var cssPartForPrefix = generator.generate(breakpoint.name, classes);
+          const cssPartForPrefix = generator.generate(breakpoint.name, classes);
           innerCss += cssPartForPrefix;
         }
       }
