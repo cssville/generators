@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   target: 'node',
@@ -25,6 +27,7 @@ module.exports = {
   },
   output: {
     filename: 'generator.bundle.js',
+    path: path.resolve(__dirname, 'gen'), // This line specifies the output directory
   },
   plugins: [],
 };
