@@ -1,11 +1,7 @@
-const path = require('path');
-
 module.exports = {
   mode: 'development',
+  target: 'node',
   // devtool: 'inline-source-map',
-  output: {
-    path: path.resolve(__dirname, 'gen'),
-  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     fallback: {
@@ -13,7 +9,6 @@ module.exports = {
       path: false,
     },
   },
-  plugins: [],
   module: {
     rules: [
       {
@@ -25,4 +20,11 @@ module.exports = {
   optimization: {
     minimize: true,
   },
+  entry: {
+    generator: './src/generate.ts',
+  },
+  output: {
+    filename: 'generator.bundle.js',
+  },
+  plugins: [],
 };
